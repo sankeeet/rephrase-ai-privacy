@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rephrase AI helps you express yourself with clarity and confidence using AI-powered writing tones.">
+  <title>Rephrase AI — Your words. Better expressed.</title>
+  <style>
+    :root {
+      --navy: #0B1F44;
+      --blue: #2563EB;
+      --background: #F2F5FA;
+      --text: #263449;
+      --muted: #64748B;
+      --border: #DCE3ED;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.7;
+    }
+    header {
+      max-width: 1050px;
+      margin: auto;
+      padding: 25px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .mark {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--navy);
+      color: white;
+      font-size: 25px;
+      font-weight: 800;
+      border-bottom: 4px solid var(--blue);
+    }
+    .brand {
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 750;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: -3px;
+    }
+    main {
+      max-width: 1050px;
+      margin: 35px auto 70px;
+      padding: 0 24px;
+    }
+    .hero {
+      padding: 65px 55px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: white;
+    }
+    .eyebrow {
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 650px;
+      margin: 15px 0;
+      color: var(--navy);
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.15;
+      letter-spacing: -1.8px;
+    }
+    .hero p {
+      max-width: 620px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 11px 19px;
+      border-radius: 7px;
+      background: var(--navy);
+      color: white;
+      font-size: 13px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .button:hover { background: var(--blue); }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .feature {
+      padding: 23px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: white;
+    }
+    .feature h2 {
+      color: var(--navy);
+      font-size: 15px;
+    }
+    .feature p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .privacy {
+      margin-top: 22px;
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: white;
+    }
+    .privacy h2 { color: var(--navy); font-size: 18px; }
+    .privacy p { color: var(--muted); font-size: 13px; }
+    .privacy a {
+      color: var(--blue);
+      font-weight: 650;
+      text-decoration: none;
+    }
+    footer {
+      max-width: 1050px;
+      margin: auto;
+      padding: 22px 24px 35px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    @media (max-width: 700px) {
+      .hero { padding: 38px 25px; }
+      .features { grid-template-columns: 1fr; }
+      main { margin-top: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="mark" aria-hidden="true">R</div>
+    <div>
+      <div class="brand">Rephrase AI</div>
+      <div class="tagline">Your words. Better expressed.</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">A smarter way to communicate</div>
+      <h1>Make every word work better.</h1>
+      <p>
+        Rephrase AI is an independent Chrome extension that helps
+        you improve messages, emails and everyday writing with
+        AI-powered writing tones.
+      </p>
+      <a class="button" href="privacy.html">Read our Privacy Policy</a>
+    </section>
+
+    <section class="features">
+      <article class="feature">
+        <h2>Choose your tone</h2>
+        <p>Rewrite text in professional, friendly, concise,
+        empathetic, confident or casual styles.</p>
+      </article>
+      <article class="feature">
+        <h2>Stay in your workflow</h2>
+        <p>Select text on supported webpages and review improved
+        writing without switching applications.</p>
+      </article>
+      <article class="feature">
+        <h2>Your own API key</h2>
+        <p>Bring your own OpenAI API key and manage your API usage
+        directly through your OpenAI account.</p>
+      </article>
+    </section>
+
+    <section class="privacy">
+      <h2>Privacy and transparency</h2>
+      <p>
+        Rephrase AI uses your own OpenAI API key. When you request
+        a rewrite, selected text and applicable instructions are
+        sent directly to OpenAI. Your key is stored in Chrome
+        local storage, which is not an encrypted secrets vault.
+      </p>
+      <a href="privacy.html">Read the full Privacy Policy →</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Rephrase AI · Independent project</span>
+    <span>Not affiliated with OpenAI or Google.</span>
+  </footer>
+</body>
+</html>
